@@ -1,16 +1,16 @@
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
 }
 
 
 * {
-  margin: 1;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   flex: 1;
-  
 }
 
 
@@ -21,7 +21,7 @@ body {
 }
 
 input {
-  width: 325px;
+  width: 60%;
   border: 1px solid #ddd;
   height: 50px;
   padding: 0 20px;
@@ -31,7 +31,7 @@ input {
 }
 
 button {
-  width: 70px;
+  width: 20%;
   height: 50px;
   font-size: 14px;
   background: #069;
@@ -42,26 +42,27 @@ button {
   margin-top: 10px;
 }
 
+.form {
+  width: 50vw;
+}
+
 .messages {
-  width: 400px;
+  width: 100%;
   height: 400px;
   margin: 20px 0;
   border: 3px solid #ddd;
   padding: 20px;
+}
+
+.messages .emissor{
+width: 100%;
+text-align: right;
   
 }
 
-.messages.emissor{
-  justify-self: flex-start;
-
-  
-}
-
-.messages.receptor{
-
-  justify-self: flex-end;
-    
-    
+.messages .receptor{
+width: 100%;
+    text-align: left;
   
 }
 

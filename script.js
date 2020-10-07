@@ -9,21 +9,21 @@ botao1.addEventListener("click", function () {
   var newMessage = document.createElement("ul");
   newMessage.classList.add("emissor");
   var newMessage2 = document.createElement("ul");
-  newMessage.classList.add("receptor");
-  newMessage.innerHTML = `teste1:${text1.value}`;
-  newMessage2.innerHTML = `teste1:${text1.value}`;
+  newMessage2.classList.add("receptor");
+  newMessage2.innerHTML = `<strong>teste1:</strong> ${text1.value}`;
+  newMessage.innerHTML = `${text1.value} <strong>:teste1</strong>`;
   messages2.appendChild(newMessage);
   messages.appendChild(newMessage2);
   text1.value = "";
 });
 
 botao2.addEventListener("click", function () {
-  var newMessage = document.createElement("lu");
+  var newMessage = document.createElement("ul");
   newMessage.classList.add("emissor");
-  var newMessage2 = document.createElement("lu");
-  newMessage.classList.add("receptor");
-  newMessage.innerHTML = `teste2:${text2.value}`;
-  newMessage2.innerHTML = `teste2:${text2.value}`;
+  var newMessage2 = document.createElement("ul");
+  newMessage2.classList.add("receptor");
+  newMessage2.innerHTML = `<strong>teste2:</strong> ${text2.value}`;
+  newMessage.innerHTML = `${text2.value} <strong>:teste2</strong>`;
   messages.appendChild(newMessage);
   messages2.appendChild(newMessage2);
   text2.value = "";
