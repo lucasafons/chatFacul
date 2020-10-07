@@ -6,10 +6,10 @@ body {
 
 
 * {
-  margin: 0 auto;
+  margin: 1;
   padding: 0;
   box-sizing: border-box;
-  
+  flex: 1;
   
 }
 
@@ -48,9 +48,6 @@ button {
   margin: 20px 0;
   border: 3px solid #ddd;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-
   
 }
 
@@ -67,6 +64,7 @@ button {
     
   
 }
+
 
 ul {
 }

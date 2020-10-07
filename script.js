@@ -28,4 +28,3 @@ botao2.addEventListener("click", function () {
   messages2.appendChild(newMessage2);
   text2.value = "";
 });
-
