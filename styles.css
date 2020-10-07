@@ -6,10 +6,10 @@ body {
 
 
 * {
-  margin: 1;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  flex: 1;
+  
   
 }
 
@@ -48,6 +48,23 @@ button {
   margin: 20px 0;
   border: 3px solid #ddd;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.messages.emissor{
+  justify-self: flex-start;
+
+  
+}
+
+.messages.receptor{
+
+  justify-self: flex-end;
+    
+    
   
 }
 
